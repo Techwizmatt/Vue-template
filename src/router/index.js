@@ -5,14 +5,40 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '*',
+    redirect: _ => {
+      return { path: '/home' }
+    }
+  },
+  {
+    path: '/home',
     name: 'Home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/Home.vue'),
+    meta: {
+      requiresAuth: false,
+      showOnNavbar: true,
+      showNavbar: true
+    }
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: () => import('../views/About.vue'),
+    meta: {
+      requiresAuth: false,
+      showOnNavbar: true,
+      showNavbar: true
+    }
+  },
+  {
+    path: '/contact',
+    name: 'Contact',
+    component: () => import('../views/Contact.vue'),
+    meta: {
+      requiresAuth: false,
+      showOnNavbar: true,
+      showNavbar: true
+    }
   }
 ]
 

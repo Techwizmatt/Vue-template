@@ -1,12 +1,12 @@
 <template>
   <section>
-    About page
+    Contact page
   </section>
 </template>
 
 <script>
 export default {
-  name: 'About',
+  name: 'Contact',
   data: () => ({})
 }
 </script>
