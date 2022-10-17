@@ -59,9 +59,9 @@ export default {
   data: () => ({
     welcomeItems: [
       {
-        title: 'Image 31',
-        content: '',
-        background: ''
+        title: 'This is the first title',
+        content: 'This is the first content below the title',
+        background: 'https://picsum.photos/1920/1080?val=1'
       },
       {
         title: 'This is the second title',
