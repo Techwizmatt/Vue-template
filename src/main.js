@@ -7,8 +7,13 @@ import vuetify from './plugins/vuetify'
 import '@babel/polyfill'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@fortawesome/fontawesome-free/css/all.css'
+import VideoBackground from 'vue-responsive-video-background-player'
 
 Vue.config.productionTip = false
+
+Vue.prototype.$circleType = require('circletype')
+
+Vue.component('video-background', VideoBackground)
 
 new Vue({
   router,

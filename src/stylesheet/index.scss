@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+$base-font-size: 18px;
+$heading-scale: 8;
+
+@for $i from 1 through 12 {
+  .extreme-#{$i} {
+    font-family: 'Permanent Marker', cursive !important;
+    font-size: $base-font-size + $heading-scale * (10 - $i);
+    //font-size: 2.125rem !important;
+    line-height: 2.5rem;
+    letter-spacing: .0073529412em !important;
+  }
+}
+
+
+.v-sheet, .expanded {
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+}

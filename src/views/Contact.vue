@@ -1,6 +1,8 @@
 <template>
   <section>
-    Contact page
+    <v-container>
+      Contact page
+    </v-container>
   </section>
 </template>
 

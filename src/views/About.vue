@@ -1,6 +1,8 @@
 <template>
   <section>
-    About page
+    <v-container>
+      About page
+    </v-container>
   </section>
 </template>
 
